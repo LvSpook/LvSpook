@@ -11,7 +11,7 @@
 [![PLATFORM](https://img.shields.io/badge/WINDOWS-000000?style=for-the-badge&logo=windows&logoColor=ff1f3d)](https://github.com/LvSpook?tab=repositories)
 [![PRIMARY](https://img.shields.io/badge/RUST-000000?style=for-the-badge&logo=rust&logoColor=ff1f3d)](https://www.rust-lang.org)
 [![STATUS](https://img.shields.io/badge/BUILDING-000000?style=for-the-badge&logo=statuspage&logoColor=ff1f3d)](https://github.com/LvSpook?tab=repositories)
-[![BOOKBOX](https://img.shields.io/badge/BOOKBOX-000000?style=for-the-badge&logo=googlechrome&logoColor=ff1f3d)](https://lvspook.github.io/bookbox/)
+[![BOOKBOX](https://img.shields.io/badge/BOOKBOX-000000?style=for-the-badge&logo=googlechrome&logoColor=ff1f3d)](https://lvspook.github.io/BookBox/)
 [![SITE](https://img.shields.io/badge/lvspook.github.io-000000?style=for-the-badge&logo=githubpages&logoColor=ff1f3d)](https://lvspook.github.io/LvSpook/)
 
 </div>
@@ -31,7 +31,7 @@ doesn't quietly phone home. When something annoys me enough, it becomes a repo.
 <a href="https://lvspook.github.io/Green-Timer/">
   <img src="docs/assets/card-green-timer.svg" alt="Green Timer — frameless always-on-top timer overlay for Windows" width="32%">
 </a>
-<a href="https://lvspook.github.io/bookbox/">
+<a href="https://lvspook.github.io/BookBox/">
   <img src="docs/assets/card-bookbox.svg" alt="BookBox — local-first bookmark toolbox for Chrome, Edge and Brave" width="32%">
 </a>
 <a href="https://github.com/LvSpook?tab=repositories">
@@ -50,7 +50,7 @@ doesn't quietly phone home. When something annoys me enough, it becomes a repo.
 
 > [!NOTE]
 > BookBox isn't on the Chrome Web Store yet. It loads unpacked from source in
-> Chrome, Edge and Brave — [install steps](https://lvspook.github.io/bookbox/#install)
+> Chrome, Edge and Brave — [install steps](https://lvspook.github.io/BookBox/#install)
 > take about a minute.
 
 ---
