@@ -184,6 +184,7 @@ section:last-of-type { border-bottom: 0; }
 }
 .repo .dot { width: 7px; height: 7px; border-radius: 50%; }
 .repo .dot.green { background: #00d250; }
+.repo .dot.blue { background: #6ea0ff; }
 .repo .dot.red { background: var(--accent); }
 .repo .sep { color: var(--border-hi); }
 .repo .meta .link { margin-left: auto; color: var(--accent); font-weight: 600; }
