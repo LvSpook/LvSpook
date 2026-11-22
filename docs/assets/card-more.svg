@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 268" width="600" height="268" role="img" aria-label="More coming — Windows tools in progress">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="55%" stop-color="#0a0305"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.14" r="0.62">
+      <stop offset="0%" stop-color="#ff1f3d" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ff1f3d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffb3bd"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <clipPath id="band"><rect x="0" y="248" width="600" height="20"/></clipPath>
+  </defs>
+
+  <rect width="600" height="268" fill="url(#bg)"/>
+  <rect width="600" height="268" fill="url(#glow)"/>
+
+  <g stroke="#ff1f3d" stroke-opacity="0.07" stroke-width="1">
+    <path d="M0 67h600M0 134h600M0 201h600"/>
+    <path d="M120 0v268M240 0v268M360 0v268M480 0v268"/>
+  </g>
+
+  <!-- empty hex slot -->
+  <g transform="translate(504 62)">
+    <circle r="56" fill="#ff1f3d" fill-opacity="0.2" filter="url(#soft)"/>
+    <path d="M0 -44 L38 -22 L38 22 L0 44 L-38 22 L-38 -22 Z"
+          fill="none" stroke="#ff1f3d" stroke-opacity="0.55" stroke-width="2"
+          stroke-dasharray="9 7"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Consolas, ui-monospace, monospace"
+          font-size="26" font-weight="700" fill="#ff1f3d" fill-opacity="0.75">?</text>
+  </g>
+
+  <text x="34" y="52" font-family="Consolas, 'Cascadia Mono', ui-monospace, monospace"
+        font-size="9.5" fill="#ff1f3d" fill-opacity="0.6" letter-spacing="2.4">03 // IN PROGRESS</text>
+
+  <text x="34" y="112" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
+        font-size="41" font-weight="800" letter-spacing="-1" fill="url(#name)">More coming</text>
+
+  <text x="34" y="142" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
+        font-size="14" fill="#b06870">Small Windows tools in the workshop.</text>
+  <text x="34" y="162" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
+        font-size="14" fill="#b06870">Watch the repositories tab for the next one.</text>
+
+  <g transform="translate(34 190)" font-family="Consolas, ui-monospace, monospace"
+     font-size="10" letter-spacing="1.4">
+    <rect x="0" y="-13" width="52" height="20" rx="2" fill="#ff1f3d" fill-opacity="0.12"/>
+    <rect x="60" y="-13" width="52" height="20" rx="2" fill="#ff1f3d" fill-opacity="0.12"/>
+    <rect x="120" y="-13" width="52" height="20" rx="2" fill="#ff1f3d" fill-opacity="0.12"/>
+    <text x="26" y="1" text-anchor="middle" fill="#ff8b98" font-size="9">QUEUED</text>
+    <text x="86" y="1" text-anchor="middle" fill="#ff8b98" font-size="9">DRAFT</text>
+    <text x="146" y="1" text-anchor="middle" fill="#ff8b98" font-size="9">IDEA</text>
+  </g>
+
+  <g clip-path="url(#band)">
+    <g fill="#ff1f3d" fill-opacity="0.16">
+      <path d="M-24 268 L22 248 H42 L-4 268 Z"/><path d="M46 268 L92 248 H112 L66 268 Z"/>
+      <path d="M116 268 L162 248 H182 L136 268 Z"/><path d="M186 268 L232 248 H252 L206 268 Z"/>
+      <path d="M256 268 L302 248 H322 L276 268 Z"/><path d="M326 268 L372 248 H392 L346 268 Z"/>
+      <path d="M396 268 L442 248 H462 L416 268 Z"/><path d="M466 268 L512 248 H532 L486 268 Z"/>
+      <path d="M536 268 L582 248 H602 L556 268 Z"/>
+    </g>
+  </g>
+
+  <path d="M0 248h600" stroke="#ff1f3d" stroke-opacity="0.3" stroke-width="1"/>
+  <rect x="1" y="1" width="598" height="266" fill="none" stroke="#ff1f3d" stroke-opacity="0.28" stroke-width="1.5"/>
+  <g stroke="#ff1f3d" stroke-opacity="0.6" stroke-width="2" fill="none">
+    <path d="M12 34 L12 12 L34 12"/>
+    <path d="M588 34 L588 12 L566 12"/>
+  </g>
+</svg>

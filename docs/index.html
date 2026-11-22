@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LvSpook — Windows desktop tools, mostly in Rust</title>
+<meta name="description" content="Small, focused desktop apps for Windows. Mostly Rust against native Win32 APIs. Small binaries, no telemetry, no admin rights.">
+<meta property="og:title" content="LvSpook">
+<meta property="og:description" content="Small, focused desktop apps for Windows. Mostly Rust.">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="assets/header.svg">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("lvspook-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <img src="assets/logo.svg" alt="">
+      <span>LV<b>SPOOK</b></span>
+    </a>
+    <div class="nav-links mono">
+      <a href="#repos">Repositories</a>
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#numbers">Numbers</a>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle colour scheme" title="Toggle colour scheme">◐</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
+    <img class="hero-banner" src="assets/header.svg" alt="LvSpook — Windows desktop tools, mostly in Rust">
+  </picture>
+
+  <div class="wrap hero-body">
+    <h1>Small tools. <em>Black and red.</em> Windows only.</h1>
+    <p>
+      I build focused desktop apps that should exist, weigh almost nothing, and
+      stay out of the way. Mostly Rust against native Win32 APIs — no browser
+      wearing a trench coat.
+    </p>
+    <div class="cta-row">
+      <a class="btn solid" href="#repos">Repositories</a>
+      <a class="btn" href="https://github.com/LvSpook">GitHub</a>
+      <a class="btn" href="https://lvspook.github.io/Green-Timer/">Green Timer docs</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="repos">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="idx mono">01</span>
+        <h2>Repositories</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="cards">
+        <a class="repo" href="https://github.com/LvSpook/Green-Timer">
+          <img src="assets/card-green-timer.svg" alt="Green Timer — frameless always-on-top timer overlay for Windows">
+          <div class="meta">
+            <span class="dot green"></span><span>Rust</span>
+            <span class="sep">/</span><span>MIT</span>
+            <span class="sep">/</span><span>pre-release</span>
+            <span class="link">Open →</span>
+          </div>
+        </a>
+
+        <a class="repo" href="https://github.com/LvSpook/Wand-Enhancer">
+          <img src="assets/card-wand-enhancer.svg" alt="Wand Enhancer — UX and interoperability extension for Wand">
+          <div class="meta">
+            <span class="dot purple"></span><span>Fork</span>
+            <span class="sep">/</span><span>Apache-2.0</span>
+            <span class="sep">/</span><span>archived</span>
+            <span class="link">Open →</span>
+          </div>
+        </a>
+
+        <a class="repo" href="https://github.com/LvSpook?tab=repositories">
+          <img src="assets/card-more.svg" alt="More coming — small Windows tools in the workshop">
+          <div class="meta">
+            <span class="dot red"></span><span>In progress</span>
+            <span class="sep">/</span><span>up next</span>
+            <span class="link">All repos →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="idx mono">02</span>
+        <h2>About</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="term">
+        <div class="term-bar">
+          <i></i><i></i><i></i>
+          <span class="title">lvspook@windows — bash</span>
+        </div>
+<pre><span class="p">LvSpook@windows:~$</span> whoami
+<span class="c">>> solo dev. small tools. zero bloat.</span>
+
+<span class="p">LvSpook@windows:~$</span> cat principles.txt
+<span class="k">01</span>  opens in under a second
+<span class="k">02</span>  settings never get lost
+<span class="k">03</span>  uninstall actually removes the app
+<span class="k">04</span>  honest docs, no hype
+
+<span class="p">LvSpook@windows:~$</span> <span class="c">_</span></pre>
+      </div>
+
+      <div class="grid2" style="margin-top:18px">
+        <div class="card">
+          <h3><span class="bar"></span> What I care about</h3>
+          <ul>
+            <li><span class="n">01</span><span>Binaries that start instantly, not after a splash screen.</span></li>
+            <li><span class="n">02</span><span>Installers that don't demand admin rights.</span></li>
+            <li><span class="n">03</span><span>Settings that survive an update.</span></li>
+            <li><span class="n">04</span><span>An uninstall that really removes everything.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="bar"></span> What I avoid</h3>
+          <ul>
+            <li><span class="n">×</span><span>Electron wrappers for things that need 5 MB.</span></li>
+            <li><span class="n">×</span><span>Telemetry I'd never read.</span></li>
+            <li><span class="n">×</span><span>Background services that phone home.</span></li>
+            <li><span class="n">×</span><span>Features nobody asked for, shipped loudly.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="idx mono">03</span>
+        <h2>Stack</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3><span class="bar"></span> Daily drivers</h3>
+          <ul>
+            <li><span class="n">01</span><span>Rust — the language for nearly everything</span></li>
+            <li><span class="n">02</span><span>Win32 / DWM — topmost, blur, per-pixel transparency</span></li>
+            <li><span class="n">03</span><span>Git and GitHub Actions for releases</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="bar"></span> Shipping</h3>
+          <ul>
+            <li><span class="n">01</span><span>Inno Setup — per-user Windows installers</span></li>
+            <li><span class="n">02</span><span>PowerShell — build and packaging scripts</span></li>
+            <li><span class="n">03</span><span>GitHub Pages — docs that stay with the source</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="numbers">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="idx mono">04</span>
+        <h2>Numbers</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="stat-row">
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=ffffff&title_color=c1121f&icon_color=c1121f&text_color=2a1013&rank_icon=github">
+          <img src="https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=000000&title_color=ff1f3d&icon_color=ff1f3d&text_color=f5d7da&rank_icon=github" alt="GitHub stats">
+        </picture>
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=ffffff&title_color=c1121f&text_color=2a1013&langs_count=6">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=000000&title_color=ff1f3d&text_color=f5d7da&langs_count=6" alt="Top languages">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="idx mono">05</span>
+        <h2>How this is built</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="notice">
+        <span class="ico">🤖</span>
+        <div>
+          <strong>Parts of this work are AI-assisted.</strong>
+          <p>
+            Some code, docs and release tooling are written with the help of an AI
+            coding assistant, under my direction and review. I say so because you
+            should know how the software you install was made. It is not an official
+            product of any AI company and is not endorsed by one. AI-assisted code can
+            contain mistakes a human would not have made — tests and manual checks
+            reduce that risk but cannot remove it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span class="mono">LVSPOOK — WINDOWS / RUST / MIT</span>
+    <nav class="mono">
+      <a href="https://github.com/LvSpook">GitHub</a>
+      <a href="https://github.com/LvSpook?tab=repositories">Repositories</a>
+      <a href="https://lvspook.github.io/Green-Timer/">Green Timer</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById("theme-toggle");
+    var prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+
+    function current() {
+      return root.getAttribute("data-theme") || (prefersLight ? "light" : "dark");
+    }
+    function apply(theme) {
+      root.setAttribute("data-theme", theme);
+      btn.textContent = theme === "light" ? "☀" : "☾";
+      var banner = document.querySelector(".hero-banner");
+      if (banner) banner.src = theme === "light" ? "assets/header-light.svg" : "assets/header.svg";
+      try { localStorage.setItem("lvspook-theme", theme); } catch (e) {}
+    }
+    apply(current());
+    btn.addEventListener("click", function () {
+      apply(current() === "light" ? "dark" : "light");
+    });
+  })();
+</script>
+
+</body>
+</html>

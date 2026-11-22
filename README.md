@@ -1,59 +1,51 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="banner.svg">
-  <img src="banner.svg" alt="LvSpook — Windows desktop tools, mostly in Rust" width="100%">
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/header-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/header.svg">
+  <img src="docs/assets/header.svg" alt="LvSpook — Windows desktop tools, mostly in Rust" width="100%">
 </picture>
 
 <br>
 
-[![Windows](https://img.shields.io/badge/PLATFORM-WINDOWS-000000?style=for-the-badge&labelColor=000000&logo=windows&logoColor=ff1f3d&color=1a0508)](https://github.com/LvSpook?tab=repositories)
-[![Rust](https://img.shields.io/badge/PRIMARY-RUST-000000?style=for-the-badge&labelColor=000000&logo=rust&logoColor=ff1f3d&color=1a0508)](https://www.rust-lang.org)
-[![Status](https://img.shields.io/badge/STATUS-BUILDING-000000?style=for-the-badge&labelColor=000000&color=1a0508&logoColor=ff1f3d)](#)
+[![PLATFORM](https://img.shields.io/badge/WINDOWS-000000?style=for-the-badge&logo=windows&logoColor=ff1f3d)](https://github.com/LvSpook?tab=repositories)
+[![PRIMARY](https://img.shields.io/badge/RUST-000000?style=for-the-badge&logo=rust&logoColor=ff1f3d)](https://www.rust-lang.org)
+[![STATUS](https://img.shields.io/badge/BUILDING-000000?style=for-the-badge&logo=statuspage&logoColor=ff1f3d)](https://github.com/LvSpook?tab=repositories)
+[![SITE](https://img.shields.io/badge/lvspook.github.io-000000?style=for-the-badge&logo=githubpages&logoColor=ff1f3d)](https://lvspook.github.io/LvSpook/)
 
 </div>
 
 ---
 
-```console
-LvSpook@windows:~$ whoami
->> solo dev. small tools. zero bloat.
-LvSpook@windows:~$ cat manifesto.txt
->> if it takes more than a second to open, it's already wrong.
-```
-
-### Hey — I'm LvSpook 👋
-
-I build **small, focused desktop apps for Windows** — things that should exist,
-weigh almost nothing, and stay out of the way. Mostly Rust against native
-Windows APIs instead of a browser wearing a trench coat.
-
-I care about the parts nobody demos: a binary that opens instantly, settings
-that never get lost, an installer that doesn't demand admin rights, and an
-uninstall that actually removes the app.
-
----
-
-## ⚡ Currently building
-
 <table>
 <tr>
 <td width="50%" valign="top">
 
-**Shipping**
-- Green Timer — overlay timer for Windows
-- Native tray apps with live theming
-- Release pipelines on GitHub Actions
+**`whoami`**
+
+```
+solo dev. windows only.
+small binaries. zero telemetry.
+no admin rights. no web wrappers.
+```
+
+I build focused desktop apps for Windows — things that should exist, weigh
+almost nothing, and stay out of the way. Mostly Rust against native Win32 APIs.
 
 </td>
 <td width="50%" valign="top">
 
-**Principles**
-- Small binaries, fast cold starts
-- No admin rights, no telemetry
-- Settings that survive updates
-- Honest docs about how it's built
+**`cat principles`**
+
+```
+01  opens in under a second
+02  settings never get lost
+03  uninstall actually removes
+04  honest docs, no hype
+```
+
+I care about the parts nobody demos. The install that doesn't need admin, the
+update that doesn't wipe your config, the tray icon that isn't a black square.
 
 </td>
 </tr>
@@ -61,62 +53,57 @@ uninstall that actually removes the app.
 
 ---
 
-## 🔴 Featured
+## 🔴 Repositories
 
 <div align="center">
 
-### Green Timer
-
-**A frameless, always-on-top timer overlay for Windows.**
-Count up, count down, run a Pomodoro, or aim at a specific time — over any
-window, without stealing clicks.
-
 <a href="https://github.com/LvSpook/Green-Timer">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LvSpook/Green-Timer/main/docs/banner-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LvSpook/Green-Timer/main/docs/banner.svg">
-  <img src="https://raw.githubusercontent.com/LvSpook/Green-Timer/main/docs/banner.svg" alt="Green Timer banner" width="100%">
-</picture>
+  <img src="docs/assets/card-green-timer.svg" alt="Green Timer — frameless always-on-top timer overlay for Windows" width="49%">
+</a>
+<a href="https://github.com/LvSpook/Wand-Enhancer">
+  <img src="docs/assets/card-wand-enhancer.svg" alt="Wand Enhancer — UX and interoperability extension for Wand" width="49%">
 </a>
 
-[![Source](https://img.shields.io/badge/SOURCE-GREEN--TIMER-ff1f3d?style=flat-square&labelColor=000000&logo=github&logoColor=ff1f3d)](https://github.com/LvSpook/Green-Timer)
-[![Docs](https://img.shields.io/badge/DOCS-LIVE-ff1f3d?style=flat-square&labelColor=000000&logo=githubpages&logoColor=ff1f3d)](https://lvspook.github.io/Green-Timer/)
-[![Release](https://img.shields.io/github/v/release/LvSpook/Green-Timer?include_prereleases&label=RELEASE&color=ff1f3d&labelColor=000000&style=flat-square)](https://github.com/LvSpook/Green-Timer/releases)
-[![License](https://img.shields.io/badge/LICENSE-MIT-ff1f3d?style=flat-square&labelColor=000000)](https://github.com/LvSpook/Green-Timer/blob/main/LICENSE)
+<a href="https://github.com/LvSpook?tab=repositories">
+  <img src="docs/assets/card-more.svg" alt="More coming — small Windows tools in the workshop" width="49%">
+</a>
+<a href="https://github.com/LvSpook?tab=repositories">
+  <img src="https://img.shields.io/badge/VIEW_ALL_REPOSITORIES-000000?style=for-the-badge&logo=github&logoColor=ff1f3d" alt="View all repositories">
+</a>
 
 </div>
+
+---
+
+## ⚡ Selected work
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-**Timer modes**
-- Count Up · Countdown · Clock
-- Pomodoro · Interval/HIIT · Target Time
+### 🟢 Green Timer
+
+Frameless, always-on-top timer overlay for Windows. Six timer modes, five
+display styles, seven themes plus a custom builder.
+
+`Rust` · `MIT` · `pre-release`
+
+→ [Source](https://github.com/LvSpook/Green-Timer) ·
+[Docs](https://lvspook.github.io/Green-Timer/) ·
+[Releases](https://github.com/LvSpook/Green-Timer/releases)
 
 </td>
 <td width="50%" valign="top">
 
-**Display styles**
-- Text · Arc · Bar · Fluid · Sprite
+### 🟣 Wand Enhancer
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+UX and interoperability extension for Wand, smoothing the rough edges the
+app leaves behind. Kept as a reference fork.
 
-**Look and feel**
-- Seven themes plus a custom builder
-- Gradients, text shadows, warning pulses
-- Optional acrylic backdrop
+`Fork` · `Apache-2.0` · `archived`
 
-</td>
-<td width="50%" valign="top">
-
-**Behaviour**
-- Global hotkeys by physical key
-- Tray, profiles, per-app auto-switch
-- Lap history with CSV export
+→ [Source](https://github.com/LvSpook/Wand-Enhancer) ·
+[Upstream](https://gitlab.com/kitbyte/wand-enhancer)
 
 </td>
 </tr>
@@ -133,7 +120,7 @@ window, without stealing clicks.
 <div align="center">
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=ff1f3d)
-![Windows API](https://img.shields.io/badge/Win32-000000?style=for-the-badge&logo=windows&logoColor=ff1f3d)
+![Win32](https://img.shields.io/badge/Win32-000000?style=for-the-badge&logo=windows&logoColor=ff1f3d)
 ![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=ff1f3d)
 ![Actions](https://img.shields.io/badge/Actions-000000?style=for-the-badge&logo=githubactions&logoColor=ff1f3d)
 ![PowerShell](https://img.shields.io/badge/PowerShell-000000?style=for-the-badge&logo=powershell&logoColor=ff1f3d)
@@ -191,6 +178,8 @@ remove it.
 ---
 
 <div align="center">
+
+[**lvspook.github.io**](https://lvspook.github.io/LvSpook/) · [**Repositories**](https://github.com/LvSpook?tab=repositories)
 
 <sub>Windows · Rust · MIT · built in small pieces</sub>
 

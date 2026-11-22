@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="LvSpook — Windows desktop tools, mostly in Rust">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#fdfafb"/>
+      <stop offset="100%" stop-color="#fdf5f6"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.16" cy="0.52" r="0.46">
+      <stop offset="0%" stop-color="#e11d2e" stop-opacity="0.18"/>
+      <stop offset="45%" stop-color="#e11d2e" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#e11d2e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="0.92" cy="0.1" r="0.5">
+      <stop offset="0%" stop-color="#e11d2e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#e11d2e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headline" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0%" stop-color="#08080a"/>
+      <stop offset="62%" stop-color="#2b0c10"/>
+      <stop offset="100%" stop-color="#c1121f"/>
+    </linearGradient>
+    <linearGradient id="slash" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c1121f" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#c1121f" stop-opacity="0.1"/>
+      <stop offset="70%" stop-color="#c1121f" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#c1121f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ruleFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c1121f" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#c1121f" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#c1121f" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="bloom" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+    <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="#c1121f" fill-opacity="0.045"/>
+    </pattern>
+    <clipPath id="band"><rect x="0" y="316" width="1200" height="24"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#core)"/>
+  <rect width="1200" height="340" fill="url(#rightGlow)"/>
+  <path d="M-40 340 L300 -20 L392 -20 L52 340 Z" fill="url(#slash)"/>
+  <path d="M180 340 L520 -20 L548 -20 L208 340 Z" fill="url(#slash)" opacity="0.55"/>
+  <path d="M900 340 L1240 -20 L1252 -20 L912 340 Z" fill="url(#slash)" opacity="0.4"/>
+  <rect width="1200" height="340" fill="url(#scan)"/>
+
+  <g stroke="#c1121f" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 85h1200M0 170h1200M0 255h1200"/>
+    <path d="M240 0v340M480 0v340M720 0v340M960 0v340"/>
+  </g>
+
+  <g stroke="#c1121f" stroke-opacity="0.34" stroke-width="1">
+    <path d="M32 0v7M56 0v3M80 0v3M104 0v3M128 0v7M152 0v3M176 0v3M200 0v3M224 0v7M248 0v3M272 0v3M296 0v3M320 0v7M344 0v3M368 0v3M392 0v3M416 0v7M440 0v3M464 0v3M488 0v3M512 0v7M536 0v3M560 0v3M584 0v3M608 0v7M632 0v3M656 0v3M680 0v3M704 0v7M728 0v3M752 0v3M776 0v3M800 0v7M824 0v3M848 0v3M872 0v3M896 0v7M920 0v3M944 0v3M968 0v3M992 0v7M1016 0v3M1040 0v3M1064 0v3M1088 0v7M1112 0v3M1136 0v3M1160 0v7"/>
+  </g>
+  <text x="32" y="26" font-family="Consolas, 'Cascadia Mono', ui-monospace, monospace" font-size="10" fill="#c1121f" fill-opacity="0.7" letter-spacing="2.6">SPECTRAL // SYS.01</text>
+  <text x="1168" y="26" text-anchor="end" font-family="Consolas, 'Cascadia Mono', ui-monospace, monospace" font-size="10" fill="#c1121f" fill-opacity="0.7" letter-spacing="2.6">SIGNAL: ACTIVE</text>
+
+  <g transform="translate(176 176)">
+    <circle cx="0" cy="0" r="104" fill="#e11d2e" fill-opacity="0.13" filter="url(#bloom)"/>
+    <circle cx="0" cy="0" r="96" fill="none" stroke="#c1121f" stroke-opacity="0.22" stroke-width="1"/>
+    <path d="M0 -96 L84 -48 L84 48 L0 96 L-84 48 L-84 -48 Z"
+          fill="#fffafa" stroke="#c1121f" stroke-opacity="0.8" stroke-width="2"/>
+    <path d="M0 -78 L68 -39 L68 39 L0 78 L-68 39 L-68 -39 Z"
+          fill="none" stroke="#c1121f" stroke-opacity="0.26" stroke-width="1"/>
+    <g fill="#c1121f">
+      <path d="M-48 3 L-14 -14 L-8 0 L-42 17 Z"/>
+      <path d="M48 3 L14 -14 L8 0 L42 17 Z"/>
+    </g>
+    <g fill="#ff8b98">
+      <path d="M-44 2 L-19 -10 L-16 -1 L-39 10 Z"/>
+      <path d="M44 2 L19 -10 L16 -1 L39 10 Z"/>
+    </g>
+    <path d="M-19 42 L19 42" stroke="#c1121f" stroke-opacity="0.6" stroke-width="2"/>
+    <path d="M-11 51 L11 51" stroke="#c1121f" stroke-opacity="0.3" stroke-width="1.5"/>
+    <path d="M0 -96 L0 -72 L-7 -58 L7 -45" fill="none" stroke="#c1121f" stroke-opacity="0.55" stroke-width="1.6"/>
+    <path d="M84 -48 L70 -30" stroke="#c1121f" stroke-opacity="0.35" stroke-width="1.4"/>
+  </g>
+
+  <g transform="translate(330 0)" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
+    <text x="-5" y="176" font-size="104" font-weight="900" letter-spacing="2" fill="#c1121f" fill-opacity="0.2">LVSPOOK</text>
+    <text x="0" y="174" font-size="104" font-weight="900" letter-spacing="2" fill="url(#headline)">LVSPOOK</text>
+  </g>
+
+  <text x="336" y="206" font-family="Consolas, 'Cascadia Mono', ui-monospace, monospace"
+        font-size="13.5" fill="#8c3a42" letter-spacing="5">WINDOWS DESKTOP TOOLS // RUST</text>
+
+  <g transform="translate(336 232)" font-family="Consolas, 'Cascadia Mono', ui-monospace, monospace" font-size="10.5" letter-spacing="1.8">
+    <rect x="0" y="-15" width="82" height="27" rx="2" fill="#c1121f" fill-opacity="0.08" stroke="#c1121f" stroke-opacity="0.5"/>
+    <text x="41" y="3" text-anchor="middle" fill="#a11322">RUST</text>
+    <rect x="92" y="-15" width="106" height="27" rx="2" fill="#c1121f" fill-opacity="0.08" stroke="#c1121f" stroke-opacity="0.5"/>
+    <text x="145" y="3" text-anchor="middle" fill="#a11322">WINDOWS</text>
+    <rect x="208" y="-15" width="140" height="27" rx="2" fill="#ffffff" stroke="#c1121f" stroke-opacity="0.3"/>
+    <text x="278" y="3" text-anchor="middle" fill="#8c3a42">BUILD: WIP</text>
+    <rect x="358" y="-15" width="118" height="27" rx="2" fill="#ffffff" stroke="#c1121f" stroke-opacity="0.3"/>
+    <text x="417" y="3" text-anchor="middle" fill="#8c3a42">NO TELEMETRY</text>
+  </g>
+
+  <g stroke="#c1121f" stroke-opacity="0.65" stroke-width="2.5" fill="none">
+    <path d="M14 52 L14 14 L52 14"/>
+    <path d="M1186 52 L1186 14 L1148 14"/>
+    <path d="M14 288 L14 316 L52 316"/>
+    <path d="M1186 288 L1186 316 L1148 316"/>
+  </g>
+
+  <g clip-path="url(#band)">
+    <g fill="#c1121f" fill-opacity="0.13">
+      <path d="M-48 340 L44 316 H84 L-8 340 Z"/><path d="M92 340 L184 316 H224 L132 340 Z"/>
+      <path d="M232 340 L324 316 H364 L272 340 Z"/><path d="M372 340 L464 316 H504 L412 340 Z"/>
+      <path d="M512 340 L604 316 H644 L552 340 Z"/><path d="M652 340 L744 316 H784 L692 340 Z"/>
+      <path d="M792 340 L884 316 H924 L832 340 Z"/><path d="M932 340 L1024 316 H1064 L972 340 Z"/>
+      <path d="M1072 340 L1164 316 H1204 L1112 340 Z"/>
+    </g>
+  </g>
+
+  <path d="M0 316h1200" stroke="url(#ruleFade)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="1198" height="338" fill="none" stroke="#c1121f" stroke-opacity="0.25" stroke-width="1.5"/>
+</svg>
