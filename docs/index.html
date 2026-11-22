@@ -39,10 +39,7 @@
 </nav>
 
 <header class="hero" id="top">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-    <img class="hero-banner" src="assets/header.svg" alt="LvSpook — Windows desktop tools, mostly in Rust">
-  </picture>
+  <img class="hero-banner" id="hero-banner" src="assets/header.svg" alt="LvSpook — Windows desktop tools, mostly in Rust">
 
   <div class="wrap hero-body">
     <h1>Small tools. <em>Black and red.</em> Windows only.</h1>
@@ -188,14 +185,8 @@
       </div>
 
       <div class="stat-row">
-        <picture>
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=ffffff&title_color=c1121f&icon_color=c1121f&text_color=2a1013&rank_icon=github">
-          <img src="https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=000000&title_color=ff1f3d&icon_color=ff1f3d&text_color=f5d7da&rank_icon=github" alt="GitHub stats">
-        </picture>
-        <picture>
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=ffffff&title_color=c1121f&text_color=2a1013&langs_count=6">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=000000&title_color=ff1f3d&text_color=f5d7da&langs_count=6" alt="Top languages">
-        </picture>
+        <img id="stat-stats" src="https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=000000&title_color=ff1f3d&icon_color=ff1f3d&text_color=f5d7da&rank_icon=github" alt="GitHub stats">
+        <img id="stat-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=000000&title_color=ff1f3d&text_color=f5d7da&langs_count=6" alt="Top languages">
       </div>
     </div>
   </section>
@@ -247,11 +238,30 @@
     function current() {
       return root.getAttribute("data-theme") || (prefersLight ? "light" : "dark");
     }
+    var SRC = {
+      stats: {
+        dark:  "https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=000000&title_color=ff1f3d&icon_color=ff1f3d&text_color=f5d7da&rank_icon=github",
+        light: "https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=ffffff&title_color=c1121f&icon_color=c1121f&text_color=2a1013&rank_icon=github"
+      },
+      langs: {
+        dark:  "https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=000000&title_color=ff1f3d&text_color=f5d7da&langs_count=6",
+        light: "https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=ffffff&title_color=c1121f&text_color=2a1013&langs_count=6"
+      }
+    };
+
     function apply(theme) {
       root.setAttribute("data-theme", theme);
       btn.textContent = theme === "light" ? "☀" : "☾";
-      var banner = document.querySelector(".hero-banner");
+
+      var banner = document.getElementById("hero-banner");
       if (banner) banner.src = theme === "light" ? "assets/header-light.svg" : "assets/header.svg";
+
+      // Keep the stat cards in step with the page instead of the OS.
+      Object.keys(SRC).forEach(function (k) {
+        var el = document.getElementById("stat-" + k);
+        if (el) el.src = SRC[k][theme];
+      });
+
       try { localStorage.setItem("lvspook-theme", theme); } catch (e) {}
     }
     apply(current());
