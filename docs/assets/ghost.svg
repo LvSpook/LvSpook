@@ -1,9 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="LvSpook ghost">
   <defs>
     <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ff5c74"/>
-      <stop offset="100%" stop-color="#ff1f3d"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.97"/>
+      <stop offset="100%" stop-color="#ffc9d1" stop-opacity="0.85"/>
     </linearGradient>
+    <filter id="tiny" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="0.7"/>
+    </filter>
   </defs>
 
   <!-- transparent, and centred in the viewBox so nav and tab both sit straight -->
@@ -12,9 +15,11 @@
              C90 96 84 98 80 93 C76 88 70 88 66 93 C62 98 56 98 52 93
              C48 88 42 88 38 93 C34 98 28 98 24 93 C20 88 14 88 10 90 Z"
           fill="url(#body)"/>
-    <ellipse cx="35" cy="53" rx="6.5" ry="7.5" fill="#12060a"/>
-    <ellipse cx="65" cy="53" rx="6.5" ry="7.5" fill="#12060a"/>
-    <path d="M42 74 Q50 81 58 74" fill="none" stroke="#12060a" stroke-opacity="0.6"
+    <ellipse cx="36" cy="52" rx="5.5" ry="6.5" fill="#12060a"/>
+    <ellipse cx="64" cy="52" rx="5.5" ry="6.5" fill="#12060a"/>
+    <ellipse cx="36" cy="51" rx="2.4" ry="2.8" fill="#ff1f3d" filter="url(#tiny)"/>
+    <ellipse cx="64" cy="51" rx="2.4" ry="2.8" fill="#ff1f3d" filter="url(#tiny)"/>
+    <path d="M42 72 Q50 79 58 72" fill="none" stroke="#12060a" stroke-opacity="0.6"
           stroke-width="3.4" stroke-linecap="round"/>
   </g>
 </svg>

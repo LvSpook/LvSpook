@@ -47,7 +47,7 @@
   </g>
 
   <text x="34" y="52" font-family="Consolas, 'Cascadia Mono', ui-monospace, monospace"
-        font-size="9.5" fill="#6ea0ff" fill-opacity="0.55" letter-spacing="2.4">01 // BOOKMARKS</text>
+        font-size="9.5" fill="#6ea0ff" fill-opacity="0.55" letter-spacing="2.4">02 // BOOKMARKS</text>
 
   <text x="34" y="112" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
         font-size="41" font-weight="800" letter-spacing="-1" fill="url(#name)">BookBox</text>
