@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="LvSpook logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1710"/>
+      <stop offset="100%" stop-color="#07120c"/>
+    </linearGradient>
+    <linearGradient id="ghost" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eafff2"/>
+      <stop offset="100%" stop-color="#9fe8bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="22" fill="url(#bg)"/>
+  <g transform="translate(48 50)">
+    <path d="M-24 26 L-24 3 C-24 -13 -13 -24 0 -24 C13 -24 24 -13 24 3 L24 26
+             C24 30 20 31 18 28 C15 25 12 25 9 28 C7 31 3 31 1 28
+             C-1 25 -5 25 -7 28 C-9 31 -13 31 -15 28 C-17 25 -21 25 -24 26 Z"
+          fill="url(#ghost)"/>
+    <ellipse cx="-8" cy="-1" rx="3" ry="3.6" fill="#062016"/>
+    <ellipse cx="8" cy="-1" rx="3" ry="3.6" fill="#062016"/>
+    <path d="M-5 11 Q0 15 5 11" fill="none" stroke="#062016" stroke-opacity="0.5"
+          stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <rect x="1" y="1" width="94" height="94" rx="21" fill="none" stroke="#00d250" stroke-opacity="0.25" stroke-width="2"/>
+</svg>
