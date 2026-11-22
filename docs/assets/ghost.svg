@@ -1,31 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="LvSpook ghost">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#000000"/>
-      <stop offset="100%" stop-color="#0d0406"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.55">
-      <stop offset="0%" stop-color="#ff1f3d" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#ff1f3d" stop-opacity="0"/>
-    </radialGradient>
     <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#ffc9d1"/>
+      <stop offset="0%" stop-color="#ff5c74"/>
+      <stop offset="100%" stop-color="#ff1f3d"/>
     </linearGradient>
-    <filter id="bloom" x="-70%" y="-70%" width="240%" height="240%">
-      <feGaussianBlur stdDeviation="1.6"/>
-    </filter>
   </defs>
 
-  <rect width="64" height="64" fill="url(#bg)"/>
-  <rect width="64" height="64" fill="url(#glow)"/>
-
-  <!-- ghost fills the tile, as in the banner -->
-  <g transform="translate(8 6) scale(0.58)">
-    <path d="M10 90 L10 55 C10 28 28 12 50 12 C72 12 90 28 90 55 L90 90
-             C90 96 84 98 80 93 C76 88 70 88 66 93 C62 98 56 98 52 93
-             C48 88 42 88 38 93 C34 98 28 98 24 93 C20 88 14 88 10 90 Z"
-          fill="#ff1f3d" fill-opacity="0.55" filter="url(#bloom)"/>
+  <!-- transparent, and centred in the viewBox so nav and tab both sit straight -->
+  <g transform="translate(3 0.1) scale(0.58)">
     <path d="M10 90 L10 55 C10 28 28 12 50 12 C72 12 90 28 90 55 L90 90
              C90 96 84 98 80 93 C76 88 70 88 66 93 C62 98 56 98 52 93
              C48 88 42 88 38 93 C34 98 28 98 24 93 C20 88 14 88 10 90 Z"
@@ -35,6 +17,4 @@
     <path d="M42 74 Q50 81 58 74" fill="none" stroke="#12060a" stroke-opacity="0.6"
           stroke-width="3.4" stroke-linecap="round"/>
   </g>
-
-  <rect x="0.75" y="0.75" width="62.5" height="62.5" fill="none" stroke="#ff1f3d" stroke-opacity="0.4" stroke-width="1.5"/>
 </svg>
