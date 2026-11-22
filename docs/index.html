@@ -8,8 +8,8 @@
 <meta property="og:title" content="LvSpook">
 <meta property="og:description" content="Small, focused desktop apps for Windows. Mostly Rust.">
 <meta property="og:type" content="profile">
-<meta property="og:image" content="assets/header.svg">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<meta property="og:image" content="assets/banner-dark.svg">
+<link rel="icon" href="assets/ghost.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 <script>
   (function () {
@@ -25,7 +25,7 @@
 <nav class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top">
-      <img src="assets/logo.svg" alt="">
+      <img src="assets/ghost.svg" alt="" width="28" height="28">
       <span>LV<b>SPOOK</b></span>
     </a>
     <div class="nav-links mono">
@@ -39,7 +39,7 @@
 </nav>
 
 <header class="hero" id="top">
-  <img class="hero-banner" id="hero-banner" src="assets/header.svg" alt="LvSpook — Windows desktop tools, mostly in Rust">
+  <img class="hero-banner" id="hero-banner" src="assets/banner-dark.svg" alt="LvSpook — Windows desktop tools, mostly in Rust">
 
   <div class="wrap hero-body">
     <h1>Small tools. <em>Black and red.</em> Windows only.</h1>
@@ -68,23 +68,13 @@
       </div>
 
       <div class="cards">
-        <a class="repo" href="https://github.com/LvSpook/Green-Timer">
+        <a class="repo" href="https://lvspook.github.io/Green-Timer/">
           <img src="assets/card-green-timer.svg" alt="Green Timer — frameless always-on-top timer overlay for Windows">
           <div class="meta">
             <span class="dot green"></span><span>Rust</span>
             <span class="sep">/</span><span>MIT</span>
             <span class="sep">/</span><span>pre-release</span>
-            <span class="link">Open →</span>
-          </div>
-        </a>
-
-        <a class="repo" href="https://github.com/LvSpook/Wand-Enhancer">
-          <img src="assets/card-wand-enhancer.svg" alt="Wand Enhancer — UX and interoperability extension for Wand">
-          <div class="meta">
-            <span class="dot purple"></span><span>Fork</span>
-            <span class="sep">/</span><span>Apache-2.0</span>
-            <span class="sep">/</span><span>archived</span>
-            <span class="link">Open →</span>
+            <span class="link">Open docs →</span>
           </div>
         </a>
 
@@ -97,6 +87,14 @@
           </div>
         </a>
       </div>
+
+      <div class="notice" style="margin-top:18px">
+        <span class="ico">⚠</span>
+        <div>
+          <strong>Green Timer is a work in progress.</strong>
+          <p>It ships as pre-releases, so the UI and file formats may still change between versions.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -108,25 +106,7 @@
         <span class="rule"></span>
       </div>
 
-      <div class="term">
-        <div class="term-bar">
-          <i></i><i></i><i></i>
-          <span class="title">lvspook@windows — bash</span>
-        </div>
-<pre><span class="p">LvSpook@windows:~$</span> whoami
-<span class="c">>> one person, one Windows box, a lot of small binaries.</span>
-<span class="c">>> nothing here is a startup.</span>
-
-<span class="p">LvSpook@windows:~$</span> cat principles.txt
-<span class="k">01</span>  if it needs a launcher, it's too slow
-<span class="k">02</span>  your settings are yours, not mine
-<span class="k">03</span>  uninstalling should leave no trace
-<span class="k">04</span>  I'd rather ship one thing well
-
-<span class="p">LvSpook@windows:~$</span> <span class="c">_</span></pre>
-      </div>
-
-      <div class="grid2" style="margin-top:18px">
+      <div class="grid2">
         <div class="card">
           <h3><span class="bar"></span> Why these exist</h3>
           <ul>
@@ -142,7 +122,7 @@
             <li><span class="n">01</span><span>Something annoys me enough to become a repo.</span></li>
             <li><span class="n">02</span><span>It runs on my own machine for a few weeks first.</span></li>
             <li><span class="n">03</span><span>Only then does it get a version number.</span></li>
-            <li><span class="n">·</span><span>Most ideas die at rule one.</span></li>
+            <li><span class="n">·</span><span>Most ideas die at step one.</span></li>
           </ul>
         </div>
       </div>
@@ -256,7 +236,7 @@
       btn.textContent = theme === "light" ? "☀" : "☾";
 
       var banner = document.getElementById("hero-banner");
-      if (banner) banner.src = theme === "light" ? "assets/header-light.svg" : "assets/header.svg";
+      if (banner) banner.src = theme === "light" ? "assets/banner-light.svg" : "assets/banner-dark.svg";
 
       // Keep the stat cards in step with the page instead of the OS.
       Object.keys(SRC).forEach(function (k) {

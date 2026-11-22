@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="docs/assets/header-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/header.svg">
-  <img src="docs/assets/header.svg" alt="LvSpook — Windows desktop tools, mostly in Rust" width="100%">
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/banner-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.svg">
+  <img src="docs/assets/banner-dark.svg" alt="LvSpook — Windows desktop tools, mostly in Rust" width="100%">
 </picture>
 
 <br>
@@ -17,101 +17,28 @@
 
 ---
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**`whoami`**
-
-```
-LvSpook — one person, one Windows box,
-a lot of small binaries.
-
-Nothing here is a startup.
-Nothing here has a roadmap meeting.
-```
-
 I make the kind of utility I keep wishing already existed: a timer that sits over
 a game, an installer that doesn't want your admin password, a tray app that
 doesn't quietly phone home. When something annoys me enough, it becomes a repo.
 
-</td>
-<td width="50%" valign="top">
-
-**`cat principles`**
-
-```
-01  if it needs a launcher, it's too slow
-02  your settings are yours, not mine
-03  uninstalling should leave no trace
-04  I'd rather ship one thing well
-```
-
-Four rules I actually use to decide what not to build. Most ideas die at rule
-one. The rest get tested on my own machine for a few weeks before they get a
-version number.
-
-</td>
-</tr>
-</table>
-
 ---
 
-## 🔴 Repositories
+## Repositories
 
 <div align="center">
 
-<a href="https://github.com/LvSpook/Green-Timer">
+<a href="https://lvspook.github.io/Green-Timer/">
   <img src="docs/assets/card-green-timer.svg" alt="Green Timer — frameless always-on-top timer overlay for Windows" width="49%">
 </a>
-<a href="https://github.com/LvSpook/Wand-Enhancer">
-  <img src="docs/assets/card-wand-enhancer.svg" alt="Wand Enhancer — UX and interoperability extension for Wand" width="49%">
-</a>
-
 <a href="https://github.com/LvSpook?tab=repositories">
   <img src="docs/assets/card-more.svg" alt="More coming — small Windows tools in the workshop" width="49%">
 </a>
+
 <a href="https://github.com/LvSpook?tab=repositories">
   <img src="https://img.shields.io/badge/VIEW_ALL_REPOSITORIES-000000?style=for-the-badge&logo=github&logoColor=ff1f3d" alt="View all repositories">
 </a>
 
 </div>
-
----
-
-## ⚡ Selected work
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🟢 Green Timer
-
-Frameless, always-on-top timer overlay for Windows. Six timer modes, five
-display styles, seven themes plus a custom builder.
-
-`Rust` · `MIT` · `pre-release`
-
-→ [Source](https://github.com/LvSpook/Green-Timer) ·
-[Docs](https://lvspook.github.io/Green-Timer/) ·
-[Releases](https://github.com/LvSpook/Green-Timer/releases)
-
-</td>
-<td width="50%" valign="top">
-
-### 🟣 Wand Enhancer
-
-UX and interoperability extension for Wand, smoothing the rough edges the
-app leaves behind. Kept as a reference fork.
-
-`Fork` · `Apache-2.0` · `archived`
-
-→ [Source](https://github.com/LvSpook/Wand-Enhancer) ·
-[Upstream](https://gitlab.com/kitbyte/wand-enhancer)
-
-</td>
-</tr>
-</table>
 
 > [!WARNING]
 > Green Timer is a work in progress and ships as pre-releases. The UI and file
@@ -119,7 +46,7 @@ app leaves behind. Kept as a reference fork.
 
 ---
 
-## 🧰 Stack
+## Stack
 
 <div align="center">
 
@@ -134,7 +61,7 @@ app leaves behind. Kept as a reference fork.
 
 ---
 
-## 📊 The numbers
+## The numbers
 
 <div align="center">
 
@@ -170,7 +97,7 @@ app leaves behind. Kept as a reference fork.
 
 ---
 
-## 🤖 How this is built
+## How this is built
 
 Some of my code, docs and release tooling are written with the help of an AI
 coding assistant, under my direction and review. I say so because you should

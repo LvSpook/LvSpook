@@ -184,39 +184,9 @@ section:last-of-type { border-bottom: 0; }
 }
 .repo .dot { width: 7px; height: 7px; border-radius: 50%; }
 .repo .dot.green { background: #00d250; }
-.repo .dot.purple { background: #a855f7; }
 .repo .dot.red { background: var(--accent); }
 .repo .sep { color: var(--border-hi); }
 .repo .meta .link { margin-left: auto; color: var(--accent); font-weight: 600; }
-
-/* ---------- terminal ---------- */
-
-.term {
-  background: #050303;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-:root[data-theme="light"] .term { background: #fdf7f8; }
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) .term { background: #fdf7f8; }
-}
-.term-bar {
-  display: flex; align-items: center; gap: 7px;
-  padding: 9px 14px; border-bottom: 1px solid var(--border);
-  background: var(--panel-2);
-}
-.term-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--border-hi); display: block; }
-.term-bar i:first-child { background: var(--accent); }
-.term-bar .title { margin-left: 8px; color: var(--muted); font-family: "Cascadia Code", Consolas, monospace; font-size: 11px; }
-.term pre {
-  margin: 0; padding: 18px 20px; overflow-x: auto;
-  font-family: "Cascadia Code", Consolas, ui-monospace, monospace;
-  font-size: 13px; line-height: 1.8; color: var(--text);
-}
-.term .p { color: var(--accent); }
-.term .c { color: var(--muted); }
-.term .k { color: var(--accent-2); }
 
 /* ---------- principles ---------- */
 
