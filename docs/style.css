@@ -192,7 +192,7 @@ section:last-of-type { border-bottom: 0; }
   --accent-line: rgba(0, 210, 80, 0.45);
   --accent-soft: rgba(0, 210, 80, 0.10);
   --card-soft: #050d08;
-  --card-border: rgba(0, 210, 80, 0.18);
+  --card-border: rgba(0, 210, 80, 0.34);
   --card-muted: #82a891;
   --card-sep: rgba(0, 210, 80, 0.32);
 }
@@ -203,14 +203,14 @@ section:last-of-type { border-bottom: 0; }
   --accent-line: rgba(110, 160, 255, 0.45);
   --accent-soft: rgba(110, 160, 255, 0.10);
   --card-soft: #05090f;
-  --card-border: rgba(110, 160, 255, 0.18);
+  --card-border: rgba(110, 160, 255, 0.34);
   --card-muted: #8698b5;
   --card-sep: rgba(110, 160, 255, 0.32);
 }
 
 .repo.red {
   --card-soft: #0a0708;
-  --card-border: rgba(255, 31, 61, 0.18);
+  --card-border: rgba(255, 31, 61, 0.30);
   --card-muted: #a0757c;
   --card-sep: rgba(255, 31, 61, 0.30);
 }
