@@ -30,39 +30,71 @@ that actually removes the app.
 
 ## 🟢 Featured project
 
-<table>
-<tr>
-<td width="60%" valign="top">
+<div align="center">
 
 ### Green Timer
 
-A frameless, always-on-top timer overlay for Windows. Count up, count down,
-run a Pomodoro, or aim at a specific time — over any window, without stealing
-clicks.
-
-- Six timer modes and five display styles
-- Seven themes plus a custom theme builder
-- Global hotkeys matched by physical key
-- System tray, profiles, per-app auto-switch
-- Per-pixel transparent, optional acrylic backdrop
-
-<br>
-
-[![Repo](https://img.shields.io/badge/source-Green--Timer-00d250?style=flat-square&logo=github&logoColor=white)](https://github.com/LvSpook/Green-Timer)
-[![Site](https://img.shields.io/badge/docs-lvspook.github.io-00d250?style=flat-square&logo=githubpages&logoColor=white)](https://lvspook.github.io/Green-Timer/)
-[![Release](https://img.shields.io/github/v/release/LvSpook/Green-Timer?include_prereleases&label=release&color=00d250&style=flat-square)](https://github.com/LvSpook/Green-Timer/releases)
-[![License](https://img.shields.io/badge/license-MIT-00d250?style=flat-square)](https://github.com/LvSpook/Green-Timer/blob/main/LICENSE)
-
-</td>
-<td width="40%" valign="top" align="center">
+**A frameless, always-on-top timer overlay for Windows.**
+Count up, count down, run a Pomodoro, or aim at a specific time — over any
+window, without stealing clicks.
 
 <a href="https://github.com/LvSpook/Green-Timer">
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LvSpook/Green-Timer/main/docs/banner-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LvSpook/Green-Timer/main/docs/banner.svg">
-  <img src="https://raw.githubusercontent.com/LvSpook/Green-Timer/main/docs/banner.svg" alt="Green Timer" width="100%">
+  <img src="https://raw.githubusercontent.com/LvSpook/Green-Timer/main/docs/banner.svg" alt="Green Timer banner" width="100%">
 </picture>
 </a>
+
+[![Source](https://img.shields.io/badge/source-Green--Timer-00d250?style=flat-square&logo=github&logoColor=white)](https://github.com/LvSpook/Green-Timer)
+[![Docs](https://img.shields.io/badge/docs-lvspook.github.io-00d250?style=flat-square&logo=githubpages&logoColor=white)](https://lvspook.github.io/Green-Timer/)
+[![Release](https://img.shields.io/github/v/release/LvSpook/Green-Timer?include_prereleases&label=release&color=00d250&style=flat-square)](https://github.com/LvSpook/Green-Timer/releases)
+[![License](https://img.shields.io/badge/license-MIT-00d250?style=flat-square)](https://github.com/LvSpook/Green-Timer/blob/main/LICENSE)
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Timer modes**
+- Count Up
+- Countdown
+- Clock
+- Pomodoro
+- Interval / HIIT
+- Target Time
+
+</td>
+<td width="50%" valign="top">
+
+**Display styles**
+- Text
+- Arc
+- Bar
+- Fluid
+- Sprite
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**Look and feel**
+- Seven themes plus a custom theme builder
+- Gradient fills, text shadows, warning pulses
+- Optional Windows blur / acrylic backdrop
+- Rotation that carries assets with it
+
+</td>
+<td width="50%" valign="top">
+
+**Behaviour**
+- Global hotkeys matched by physical key
+- System tray with quick actions
+- Saved profiles and per-app auto-switch
+- Auto-pause when a target app loses focus
+- Lap history with CSV export
 
 </td>
 </tr>
