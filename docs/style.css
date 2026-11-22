@@ -156,7 +156,9 @@ section:last-of-type { border-bottom: 0; }
 
 /* ---------- repo cards ---------- */
 
-.cards { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.cards { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* the odd card out sits centred under a full-width pair, at the same size */
+.cards .repo-center { grid-column: 1 / -1; justify-self: center; width: calc(50% - 9px); }
 
 .repo {
   position: relative;
@@ -173,6 +175,10 @@ section:last-of-type { border-bottom: 0; }
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
 }
 .repo img { display: block; width: 100%; height: auto; }
+
+/* a card can carry its own accent instead of the site red */
+.repo.blue { --accent: #6ea0ff; --accent-line: rgba(110, 160, 255, 0.45); --accent-soft: rgba(110, 160, 255, 0.10); }
+.repo.blue:hover { box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(110, 160, 255, 0.16); }
 
 .repo .meta {
   display: flex; align-items: center; gap: 9px; flex-wrap: wrap;
@@ -230,5 +236,6 @@ footer { padding: 34px 0 46px; color: var(--muted); font-size: 13px; }
 
 @media (max-width: 760px) {
   .nav-links { display: none; }
-  .cards { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: minmax(0, 1fr); }
+  .cards .repo-center { width: 100%; }
 }

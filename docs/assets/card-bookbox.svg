@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 268" width="600" height="268" role="img" aria-label="BookBox - local-first bookmark toolbox for Chrome, Edge and Brave">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#000000"/>
-      <stop offset="55%" stop-color="#0a0305"/>
-      <stop offset="100%" stop-color="#000000"/>
+      <stop offset="0%" stop-color="#05080f"/>
+      <stop offset="55%" stop-color="#080d18"/>
+      <stop offset="100%" stop-color="#04070d"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.82" cy="0.14" r="0.62">
-      <stop offset="0%" stop-color="#ff1f3d" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#ff1f3d" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0.84" cy="0.12" r="0.62">
+      <stop offset="0%" stop-color="#6ea0ff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#6ea0ff" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ab4ff"/>
+      <stop offset="100%" stop-color="#4f7fe8"/>
+    </linearGradient>
     <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#ffb3bd"/>
-    </linearGradient>
-    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ff5c74"/>
-      <stop offset="100%" stop-color="#ff1f3d"/>
+      <stop offset="100%" stop-color="#b3cbff"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="8"/>
+      <feGaussianBlur stdDeviation="7"/>
     </filter>
     <clipPath id="band"><rect x="0" y="248" width="600" height="20"/></clipPath>
   </defs>
@@ -26,52 +26,52 @@
   <rect width="600" height="268" fill="url(#bg)"/>
   <rect width="600" height="268" fill="url(#glow)"/>
 
-  <g stroke="#ff1f3d" stroke-opacity="0.07" stroke-width="1">
+  <g stroke="#6ea0ff" stroke-opacity="0.06" stroke-width="1">
     <path d="M0 67h600M0 134h600M0 201h600"/>
     <path d="M120 0v268M240 0v268M360 0v268M480 0v268"/>
   </g>
 
-  <!-- shelf of saved rows -->
+  <!-- box of books -->
   <g transform="translate(506 60)">
-    <rect x="-52" y="-52" width="104" height="104" rx="9" fill="none" stroke="#ff1f3d" stroke-opacity="0.18" stroke-width="1.5"/>
-    <rect x="-52" y="26" width="104" height="26" fill="#ff1f3d" fill-opacity="0.08"/>
+    <rect x="-52" y="-52" width="104" height="104" rx="9" fill="none" stroke="#6ea0ff" stroke-opacity="0.16" stroke-width="1.5"/>
+    <rect x="-52" y="26" width="104" height="26" fill="#6ea0ff" fill-opacity="0.07"/>
 
-    <rect x="-36" y="-6" width="13" height="32" rx="2" fill="#ff1f3d" fill-opacity="0.28"/>
-    <rect x="-21" y="-16" width="13" height="42" rx="2" fill="#ff1f3d" fill-opacity="0.6" filter="url(#soft)"/>
+    <rect x="-36" y="-6" width="13" height="32" rx="2" fill="#6ea0ff" fill-opacity="0.26"/>
+    <rect x="-21" y="-16" width="13" height="42" rx="2" fill="#6ea0ff" fill-opacity="0.55" filter="url(#soft)"/>
     <rect x="-21" y="-16" width="13" height="42" rx="2" fill="url(#mark)"/>
-    <rect x="-6" y="0" width="13" height="26" rx="2" fill="#ff1f3d" fill-opacity="0.40"/>
-    <rect x="9" y="-11" width="11" height="37" rx="2" fill="#ff1f3d" fill-opacity="0.22"/>
+    <rect x="-6" y="0" width="13" height="26" rx="2" fill="#6ea0ff" fill-opacity="0.38"/>
+    <rect x="9" y="-11" width="11" height="37" rx="2" fill="#6ea0ff" fill-opacity="0.20"/>
 
     <path d="M14 -42h15v25l-7.5-6L14 -17z" fill="url(#mark)"/>
-    <path d="M-40 26h80" stroke="#ff1f3d" stroke-opacity="0.32" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M-40 26h80" stroke="#6ea0ff" stroke-opacity="0.30" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
   <text x="34" y="52" font-family="Consolas, 'Cascadia Mono', ui-monospace, monospace"
-        font-size="9.5" fill="#ff1f3d" fill-opacity="0.6" letter-spacing="2.4">02 // BOOKMARKS</text>
+        font-size="9.5" fill="#6ea0ff" fill-opacity="0.55" letter-spacing="2.4">01 // BOOKMARKS</text>
 
   <text x="34" y="112" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
         font-size="41" font-weight="800" letter-spacing="-1" fill="url(#name)">BookBox</text>
 
   <text x="34" y="142" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
-        font-size="14" fill="#b06870">Local-first bookmark toolbox for Chrome, Edge and Brave.</text>
+        font-size="14" fill="#8e9db3">Local-first bookmark toolbox for Chrome, Edge and Brave.</text>
   <text x="34" y="162" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
-        font-size="14" fill="#b06870">Search, sort, tag and clean up - previewing every change.</text>
+        font-size="14" fill="#8e9db3">Search, sort, tag and clean up - previewing every change.</text>
 
   <g transform="translate(34 190)" font-family="Consolas, ui-monospace, monospace"
      font-size="10" letter-spacing="1.4">
-    <circle cx="4" cy="-4" r="4" fill="#ff1f3d"/>
-    <text x="14" y="0" fill="#e09aa3">Extension</text>
-    <text x="92" y="0" fill="#ff5c74" fill-opacity="0.55">/</text>
-    <text x="106" y="0" fill="#e09aa3">Local-only</text>
-    <text x="188" y="0" fill="#ff5c74" fill-opacity="0.55">/</text>
-    <text x="202" y="0" fill="#e09aa3">v2.3.0</text>
-    <rect x="262" y="-13" width="74" height="20" rx="2" fill="#ff1f3d" fill-opacity="0.12"
-          stroke="#ff1f3d" stroke-opacity="0.4"/>
-    <text x="299" y="1" text-anchor="middle" fill="#ff8b98" font-size="9">UNPACKED</text>
+    <circle cx="4" cy="-4" r="4" fill="#6ea0ff"/>
+    <text x="14" y="0" fill="#a9c3ef">Extension</text>
+    <text x="92" y="0" fill="#8ab4ff" fill-opacity="0.55">/</text>
+    <text x="106" y="0" fill="#a9c3ef">Local-only</text>
+    <text x="188" y="0" fill="#8ab4ff" fill-opacity="0.55">/</text>
+    <text x="202" y="0" fill="#a9c3ef">v2.3.0</text>
+    <rect x="262" y="-13" width="74" height="20" rx="2" fill="#6ea0ff" fill-opacity="0.1"
+          stroke="#6ea0ff" stroke-opacity="0.4"/>
+    <text x="299" y="1" text-anchor="middle" fill="#8ab4ff" fill-opacity="0.85" font-size="9">UNPACKED</text>
   </g>
 
   <g clip-path="url(#band)">
-    <g fill="#ff1f3d" fill-opacity="0.16">
+    <g fill="#6ea0ff" fill-opacity="0.16">
       <path d="M-24 268 L22 248 H42 L-4 268 Z"/><path d="M46 268 L92 248 H112 L66 268 Z"/>
       <path d="M116 268 L162 248 H182 L136 268 Z"/><path d="M186 268 L232 248 H252 L206 268 Z"/>
       <path d="M256 268 L302 248 H322 L276 268 Z"/><path d="M326 268 L372 248 H392 L346 268 Z"/>
@@ -80,9 +80,9 @@
     </g>
   </g>
 
-  <path d="M0 248h600" stroke="#ff1f3d" stroke-opacity="0.3" stroke-width="1"/>
-  <rect x="1" y="1" width="598" height="266" fill="none" stroke="#ff1f3d" stroke-opacity="0.28" stroke-width="1.5"/>
-  <g stroke="#ff1f3d" stroke-opacity="0.6" stroke-width="2" fill="none">
+  <path d="M0 248h600" stroke="#6ea0ff" stroke-opacity="0.3" stroke-width="1"/>
+  <rect x="1" y="1" width="598" height="266" fill="none" stroke="#6ea0ff" stroke-opacity="0.28" stroke-width="1.5"/>
+  <g stroke="#6ea0ff" stroke-opacity="0.6" stroke-width="2" fill="none">
     <path d="M12 34 L12 12 L34 12"/>
     <path d="M588 34 L588 12 L566 12"/>
   </g>
