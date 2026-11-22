@@ -176,23 +176,62 @@ section:last-of-type { border-bottom: 0; }
 }
 .repo img { display: block; width: 100%; height: auto; }
 
-/* a card can carry its own accent instead of the site red */
-.repo.blue { --accent: #6ea0ff; --accent-line: rgba(110, 160, 255, 0.45); --accent-soft: rgba(110, 160, 255, 0.10); }
+/* each card carries its own accent, so the footer strip belongs to the card
+   rather than to the page theme. The artwork is always dark, so the strip keeps
+   a dark tone of its own in light mode too. */
+.repo {
+  --card-soft: rgba(255, 255, 255, 0.04);
+  --card-border: rgba(255, 255, 255, 0.10);
+  --card-muted: #a0757c;
+  --card-sep: rgba(255, 255, 255, 0.18);
+}
+
+.repo.green {
+  --accent: #00d250;
+  --accent-2: #00f5a0;
+  --accent-line: rgba(0, 210, 80, 0.45);
+  --accent-soft: rgba(0, 210, 80, 0.10);
+  --card-soft: #050d08;
+  --card-border: rgba(0, 210, 80, 0.18);
+  --card-muted: #82a891;
+  --card-sep: rgba(0, 210, 80, 0.32);
+}
+
+.repo.blue {
+  --accent: #6ea0ff;
+  --accent-2: #8ab4ff;
+  --accent-line: rgba(110, 160, 255, 0.45);
+  --accent-soft: rgba(110, 160, 255, 0.10);
+  --card-soft: #05090f;
+  --card-border: rgba(110, 160, 255, 0.18);
+  --card-muted: #8698b5;
+  --card-sep: rgba(110, 160, 255, 0.32);
+}
+
+.repo.red {
+  --card-soft: #0a0708;
+  --card-border: rgba(255, 31, 61, 0.18);
+  --card-muted: #a0757c;
+  --card-sep: rgba(255, 31, 61, 0.30);
+}
+
+.repo.green:hover { box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(0, 210, 80, 0.16); }
 .repo.blue:hover { box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(110, 160, 255, 0.16); }
 
 .repo .meta {
   display: flex; align-items: center; gap: 9px; flex-wrap: wrap;
   padding: 12px 16px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--card-border);
+  background: var(--card-soft);
   font-family: "Cascadia Code", Consolas, ui-monospace, monospace;
   font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase;
-  color: var(--muted);
+  color: var(--card-muted);
 }
 .repo .dot { width: 7px; height: 7px; border-radius: 50%; }
 .repo .dot.green { background: #00d250; }
 .repo .dot.blue { background: #6ea0ff; }
 .repo .dot.red { background: var(--accent); }
-.repo .sep { color: var(--border-hi); }
+.repo .sep { color: var(--card-sep); }
 .repo .meta .link { margin-left: auto; color: var(--accent); font-weight: 600; }
 
 /* ---------- principles ---------- */
