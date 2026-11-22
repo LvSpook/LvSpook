@@ -28,20 +28,14 @@ doesn't quietly phone home. When something annoys me enough, it becomes a repo.
 
 <div align="center">
 
-<a href="https://lvspook.github.io/Green-Timer/">
-  <img src="docs/assets/card-green-timer.svg" alt="Green Timer — frameless always-on-top timer overlay for Windows" width="45%">
-</a>
-<a href="https://lvspook.github.io/BookBox/">
-  <img src="docs/assets/card-bookbox.svg" alt="BookBox — local-first bookmark toolbox for Chrome, Edge and Brave" width="45%">
-</a>
+<p align="center">
+  <a href="https://lvspook.github.io/Green-Timer/"><img src="docs/assets/card-green-timer.svg" alt="Green Timer — frameless always-on-top timer overlay for Windows" width="45%"></a>
+  <a href="https://lvspook.github.io/BookBox/"><img src="docs/assets/card-bookbox.svg" alt="BookBox — local-first bookmark toolbox for Chrome, Edge and Brave" width="45%"></a>
+</p>
 
-<a href="https://github.com/LvSpook?tab=repositories">
-  <img src="docs/assets/card-more.svg" alt="More coming — small Windows tools in the workshop" width="45%">
-</a>
-
-<a href="https://github.com/LvSpook?tab=repositories">
-  <img src="https://img.shields.io/badge/VIEW_ALL_REPOSITORIES-000000?style=for-the-badge&logo=github&logoColor=ff1f3d" alt="View all repositories">
-</a>
+<p align="center">
+  <a href="https://github.com/LvSpook?tab=repositories"><img src="docs/assets/card-more.svg" alt="More coming — small Windows tools in the workshop" width="45%"></a>
+</p>
 
 </div>
 
