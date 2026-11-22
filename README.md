@@ -140,17 +140,17 @@ window, without stealing clicks.
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=LvSpook&hide_border=true&background=ffffff&stroke=e0efe6&ring=00a83e&fire=008a33&currStreakLabel=008a33&sideLabels=5a7365&dates=5a7365">
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=LvSpook&hide_border=true&background=0c1710&stroke=1d3327&ring=00d250&fire=00f5a0&currStreakLabel=00d250&sideLabels=8fae9c&dates=8fae9c">
-  <img src="https://streak-stats.demolab.com?user=LvSpook&hide_border=true&background=0c1710&stroke=1d3327&ring=00d250&fire=00f5a0&currStreakLabel=00d250&sideLabels=8fae9c&dates=8fae9c" alt="Contribution streak" height="165">
+  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=LvSpook&hide_border=true&background=ffffff&stroke=e0efe6&ring=00a83e&fire=008a33&currStreakNum=00752c&sideNums=0f1a13&currStreakLabel=008a33&sideLabels=5a7365&dates=5a7365">
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=LvSpook&hide_border=true&background=0c1710&stroke=1d3327&ring=00d250&fire=00f5a0&currStreakNum=00f5a0&sideNums=b9f5cd&currStreakLabel=00d250&sideLabels=8fae9c&dates=8fae9c">
+  <img src="https://streak-stats.demolab.com?user=LvSpook&hide_border=true&background=0c1710&stroke=1d3327&ring=00d250&fire=00f5a0&currStreakNum=00f5a0&sideNums=b9f5cd&currStreakLabel=00d250&sideLabels=8fae9c&dates=8fae9c" alt="Contribution streak" height="165">
 </picture>
 
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=LvSpook&bg_color=ffffff&color=2d4a38&line=00a83e&point=008a33&area=true&hide_border=true">
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=LvSpook&bg_color=0c1710&color=b9f5cd&line=00d250&point=00f5a0&area=true&hide_border=true">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LvSpook&bg_color=0c1710&color=b9f5cd&line=00d250&point=00f5a0&area=true&hide_border=true" alt="Contribution activity" width="100%">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=LvSpook&bg_color=ffffff&color=2d4a38&line=00a83e&point=008a33&area=true&area_color=00a83e&hide_border=true">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=LvSpook&bg_color=0c1710&color=b9f5cd&line=00d250&point=00f5a0&area=true&area_color=00d250&hide_border=true">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LvSpook&bg_color=0c1710&color=b9f5cd&line=00d250&point=00f5a0&area=true&area_color=00d250&hide_border=true" alt="Contribution activity" width="100%">
 </picture>
 
 </div>
