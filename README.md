@@ -24,13 +24,16 @@
 **`whoami`**
 
 ```
-solo dev. windows only.
-small binaries. zero telemetry.
-no admin rights. no web wrappers.
+LvSpook — one person, one Windows box,
+a lot of small binaries.
+
+Nothing here is a startup.
+Nothing here has a roadmap meeting.
 ```
 
-I build focused desktop apps for Windows — things that should exist, weigh
-almost nothing, and stay out of the way. Mostly Rust against native Win32 APIs.
+I make the kind of utility I keep wishing already existed: a timer that sits over
+a game, an installer that doesn't want your admin password, a tray app that
+doesn't quietly phone home. When something annoys me enough, it becomes a repo.
 
 </td>
 <td width="50%" valign="top">
@@ -38,14 +41,15 @@ almost nothing, and stay out of the way. Mostly Rust against native Win32 APIs.
 **`cat principles`**
 
 ```
-01  opens in under a second
-02  settings never get lost
-03  uninstall actually removes
-04  honest docs, no hype
+01  if it needs a launcher, it's too slow
+02  your settings are yours, not mine
+03  uninstalling should leave no trace
+04  I'd rather ship one thing well
 ```
 
-I care about the parts nobody demos. The install that doesn't need admin, the
-update that doesn't wipe your config, the tray icon that isn't a black square.
+Four rules I actually use to decide what not to build. Most ideas die at rule
+one. The rest get tested on my own machine for a few weeks before they get a
+version number.
 
 </td>
 </tr>
