@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="docs/assets/banner-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.svg">
-  <img src="docs/assets/banner-dark.svg" alt="LvSpook — Windows desktop tools, mostly in Rust" width="100%">
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/banner-light.svg?v=3">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.svg?v=3">
+  <img src="docs/assets/banner-dark.svg?v=3" alt="LvSpook — Windows desktop tools, mostly in Rust" width="100%">
 </picture>
 
 <br>
@@ -34,7 +34,7 @@ doesn't quietly phone home. When something annoys me enough, it becomes a repo.
 </p>
 
 <p align="center">
-  <a href="https://github.com/LvSpook?tab=repositories"><img src="docs/assets/card-more.svg" alt="More coming — small Windows tools in the workshop" width="45%"></a>
+  <a href="https://github.com/LvSpook?tab=repositories"><img src="docs/assets/card-more.svg?v=3" alt="More coming — small Windows tools in the workshop" width="45%"></a>
 </p>
 
 </div>
