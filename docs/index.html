@@ -3,14 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LvSpook — Windows desktop tools, mostly in Rust</title>
+<title>LvSpook: Windows desktop tools, mostly in Rust</title>
 <meta name="description" content="Small, focused desktop apps for Windows. Mostly Rust against native Win32 APIs. Small binaries, no telemetry, no admin rights.">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta property="og:title" content="LvSpook">
 <meta property="og:description" content="Small, focused desktop apps for Windows. Mostly Rust.">
 <meta property="og:type" content="profile">
 <meta property="og:image" content="assets/banner-dark.svg?v=3">
 <link rel="icon" href="assets/ghost.svg?v=5" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="preload" href="assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=5">
 <script>
   (function () {
     try {
@@ -22,32 +26,46 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3.6 21 19.2H3z"/><path d="M12 9.4v4.4"/><path d="M12 16.9h.01"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6"/><path d="M12 11v5.4"/><path d="M12 7.9h.01"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3.8l1.7 4.6 4.6 1.7-4.6 1.7L12 16.4l-1.7-4.6-4.6-1.7 4.6-1.7z"/><path d="M18.3 16.2l.8 2.1 2.1.8-2.1.8-.8 2.1-.8-2.1-2.1-.8 2.1-.8z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.6v2.2M12 19.2v2.2M4.4 4.4l1.6 1.6M18 18l1.6 1.6M2.6 12h2.2M19.2 12h2.2M4.4 19.6 6 18M18 6l1.6-1.6"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.2A8.4 8.4 0 1 1 9.8 4a6.8 6.8 0 0 0 10.2 10.2z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h14"/><path d="M13 6.5 18.5 12 13 17.5"/></symbol>
+</svg>
+
 <nav class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top">
-      <img src="assets/ghost.svg?v=5" alt="" width="28" height="28">
+      <img src="assets/ghost.svg?v=5" alt="" width="26" height="26">
       <span>LV<b>SPOOK</b></span>
     </a>
-    <div class="nav-links mono">
+    <div class="nav-links">
       <a href="#repos">Repositories</a>
       <a href="#about">About</a>
       <a href="#stack">Stack</a>
       <a href="#numbers">Numbers</a>
     </div>
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle colour scheme" title="Toggle colour scheme">◐</button>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour scheme">
+      <svg class="icon to-dark" aria-hidden="true"><use href="#i-sun"/></svg>
+      <svg class="icon to-light" aria-hidden="true"><use href="#i-moon"/></svg>
+    </button>
   </div>
 </nav>
 
 <header class="hero" id="top">
-  <img class="hero-banner" id="hero-banner" src="assets/banner-dark.svg?v=3" alt="LvSpook — Windows desktop tools, mostly in Rust">
+  <img class="hero-banner" id="hero-banner" src="assets/banner-dark.svg?v=3" alt="LvSpook, Windows desktop tools mostly in Rust" width="1200" height="360">
 
   <div class="wrap hero-body">
     <h1>Small tools. <em>Black and red.</em> Mostly Windows.</h1>
     <p>
-      I make the kind of utility I keep wishing already existed — a timer that
-      sits over a game, an installer that doesn't want your admin password, a
-      tray app that doesn't quietly phone home. When something annoys me enough,
-      it becomes a repo.
+      I make the kind of utility I keep wishing already existed: a timer that sits
+      over a game, an installer that doesn't want your admin password, a tray app
+      that doesn't quietly phone home. When something annoys me enough, it becomes
+      a repo.
     </p>
     <div class="cta-row">
       <a class="btn solid" href="#repos">Repositories</a>
@@ -58,59 +76,58 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <section id="repos">
     <div class="wrap">
       <div class="sec-head">
-        <span class="idx mono">01</span>
         <h2>Repositories</h2>
         <span class="rule"></span>
       </div>
 
       <div class="cards">
         <a class="repo green" href="https://lvspook.github.io/Green-Timer/">
-          <img src="assets/card-green-timer.svg" alt="Green Timer — frameless always-on-top timer overlay for Windows">
+          <img src="assets/card-green-timer.svg" alt="Green Timer, a frameless always-on-top timer overlay for Windows" width="520" height="260">
           <div class="meta">
             <span class="dot green"></span><span>Rust</span>
             <span class="sep">/</span><span>MIT</span>
             <span class="sep">/</span><span>pre-release</span>
-            <span class="link">Open docs →</span>
+            <span class="link">Open docs <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
           </div>
         </a>
 
         <a class="repo blue" href="https://lvspook.github.io/BookBox/">
-          <img src="assets/card-bookbox.svg?v=2" alt="BookBox - local-first bookmark toolbox for Chrome, Edge and Brave">
+          <img src="assets/card-bookbox.svg?v=2" alt="BookBox, a local-first bookmark toolbox for Chrome, Edge and Brave" width="520" height="260">
           <div class="meta">
             <span class="dot blue"></span><span>Extension</span>
             <span class="sep">/</span><span>local-first</span>
             <span class="sep">/</span><span>unpacked</span>
-            <span class="link">Open docs →</span>
+            <span class="link">Open docs <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
           </div>
         </a>
 
         <a class="repo red repo-center" href="https://github.com/LvSpook?tab=repositories">
-          <img src="assets/card-more.svg?v=3" alt="More coming — small Windows tools in the workshop">
+          <img src="assets/card-more.svg?v=3" alt="More coming, small Windows tools in the workshop" width="520" height="260">
           <div class="meta">
             <span class="dot red"></span><span>In progress</span>
             <span class="sep">/</span><span>up next</span>
-            <span class="link">All repos →</span>
+            <span class="link">All repos <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
           </div>
         </a>
       </div>
 
-      <div class="notice" style="margin-top:18px">
-        <span class="ico">⚠</span>
+      <div class="notice warn spaced">
+        <svg class="icon ico" aria-hidden="true"><use href="#i-warn"/></svg>
         <div>
           <strong>Green Timer is a work in progress.</strong>
           <p>It ships as pre-releases, so the UI and file formats may still change between versions.</p>
         </div>
       </div>
 
-      <div class="notice" style="margin-top:14px;border-color:var(--border-hi);background:var(--panel)">
-        <span class="ico" style="color:var(--muted)">i</span>
+      <div class="notice dim spaced">
+        <svg class="icon ico" aria-hidden="true"><use href="#i-info"/></svg>
         <div>
-          <strong style="color:var(--text)">BookBox isn't on the Chrome Web Store yet.</strong>
+          <strong>BookBox isn't on the Chrome Web Store yet.</strong>
           <p>It loads unpacked from source in Chrome, Edge and Brave. <a href="https://lvspook.github.io/BookBox/#install">Install steps</a> take about a minute.</p>
         </div>
       </div>
@@ -120,14 +137,13 @@
   <section id="about">
     <div class="wrap">
       <div class="sec-head">
-        <span class="idx mono">02</span>
         <h2>About</h2>
         <span class="rule"></span>
       </div>
 
       <div class="grid2">
         <div class="card">
-          <h3><span class="bar"></span> Why these exist</h3>
+          <h3><span class="bar"></span>Why these exist</h3>
           <ul>
             <li><span class="n">01</span><span>A timer that sits over a game without stealing clicks.</span></li>
             <li><span class="n">02</span><span>An installer that doesn't want your admin password.</span></li>
@@ -137,12 +153,12 @@
           </ul>
         </div>
         <div class="card">
-          <h3><span class="bar"></span> How things get built</h3>
+          <h3><span class="bar"></span>How things get built</h3>
           <ul>
             <li><span class="n">01</span><span>Something annoys me enough to become a repo.</span></li>
             <li><span class="n">02</span><span>It runs on my own machine for a few weeks first.</span></li>
             <li><span class="n">03</span><span>Only then does it get a version number.</span></li>
-            <li><span class="n">·</span><span>Most ideas die at step one.</span></li>
+            <li><span class="n">04</span><span>Most ideas die at step one.</span></li>
           </ul>
         </div>
       </div>
@@ -152,27 +168,26 @@
   <section id="stack">
     <div class="wrap">
       <div class="sec-head">
-        <span class="idx mono">03</span>
         <h2>Stack</h2>
         <span class="rule"></span>
       </div>
 
       <div class="grid2">
         <div class="card">
-          <h3><span class="bar"></span> Daily drivers</h3>
+          <h3><span class="bar"></span>Daily drivers</h3>
           <ul>
-            <li><span class="n">01</span><span>Rust — the language for nearly everything</span></li>
-            <li><span class="n">02</span><span>Win32 / DWM — topmost, blur, per-pixel transparency</span></li>
-            <li><span class="n">03</span><span>Git and GitHub Actions for releases</span></li>
+            <li><span class="n">01</span><span><strong>Rust</strong>, for nearly everything</span></li>
+            <li><span class="n">02</span><span><strong>Win32 and DWM</strong>, for topmost, blur and per-pixel transparency</span></li>
+            <li><span class="n">03</span><span><strong>Git and GitHub Actions</strong>, for releases</span></li>
           </ul>
         </div>
         <div class="card">
-          <h3><span class="bar"></span> Shipping</h3>
+          <h3><span class="bar"></span>Shipping</h3>
           <ul>
-            <li><span class="n">01</span><span>Inno Setup — per-user Windows installers</span></li>
-            <li><span class="n">02</span><span>PowerShell — build and packaging scripts</span></li>
-            <li><span class="n">03</span><span>GitHub Pages — docs that stay with the source</span></li>
-            <li><span class="n">04</span><span>Chrome Extension APIs — where BookBox lives</span></li>
+            <li><span class="n">01</span><span><strong>Inno Setup</strong>, for per-user Windows installers</span></li>
+            <li><span class="n">02</span><span><strong>PowerShell</strong>, for build and packaging scripts</span></li>
+            <li><span class="n">03</span><span><strong>GitHub Pages</strong>, for docs that stay with the source</span></li>
+            <li><span class="n">04</span><span><strong>Chrome Extension APIs</strong>, where BookBox lives</span></li>
           </ul>
         </div>
       </div>
@@ -182,14 +197,13 @@
   <section id="numbers">
     <div class="wrap">
       <div class="sec-head">
-        <span class="idx mono">04</span>
         <h2>Numbers</h2>
         <span class="rule"></span>
       </div>
 
       <div class="stat-row">
-        <img id="stat-stats" src="https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=000000&title_color=ff1f3d&icon_color=ff1f3d&text_color=f5d7da&rank_icon=github" alt="GitHub stats">
-        <img id="stat-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=000000&title_color=ff1f3d&text_color=f5d7da&langs_count=6" alt="Top languages">
+        <img id="stat-stats" width="467" height="195" src="https://github-readme-stats.vercel.app/api?username=LvSpook&show_icons=true&hide_title=true&hide_border=true&bg_color=000000&title_color=ff1f3d&icon_color=ff1f3d&text_color=f5d7da&rank_icon=github" alt="GitHub statistics for LvSpook">
+        <img id="stat-langs" width="300" height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LvSpook&layout=compact&hide_border=true&bg_color=000000&title_color=ff1f3d&text_color=f5d7da&langs_count=6" alt="Most used languages across LvSpook repositories">
       </div>
     </div>
   </section>
@@ -197,13 +211,12 @@
   <section id="ai">
     <div class="wrap">
       <div class="sec-head">
-        <span class="idx mono">05</span>
         <h2>How this is built</h2>
         <span class="rule"></span>
       </div>
 
       <div class="notice">
-        <span class="ico">🤖</span>
+        <svg class="icon ico" aria-hidden="true"><use href="#i-sparkle"/></svg>
         <div>
           <strong>Parts of this work are AI-assisted.</strong>
           <p>
@@ -211,8 +224,8 @@
             coding assistant, under my direction and review. I say so because you
             should know how the software you install was made. It is not an official
             product of any AI company and is not endorsed by one. AI-assisted code can
-            contain mistakes a human would not have made — tests and manual checks
-            reduce that risk but cannot remove it.
+            contain mistakes a human would not have made. Tests and manual checks
+            reduce that risk, but cannot remove it.
           </p>
         </div>
       </div>
@@ -223,8 +236,8 @@
 
 <footer>
   <div class="wrap foot">
-    <span class="mono">LVSPOOK — WINDOWS / RUST / MIT</span>
-    <nav class="mono">
+    <span class="mono">LvSpook / Windows / Rust / MIT</span>
+    <nav aria-label="Footer">
       <a href="https://github.com/LvSpook">GitHub</a>
       <a href="https://github.com/LvSpook?tab=repositories">Repositories</a>
       <a href="https://lvspook.github.io/Green-Timer/">Green Timer</a>
@@ -254,7 +267,7 @@
 
     function apply(theme) {
       root.setAttribute("data-theme", theme);
-      btn.textContent = theme === "light" ? "☀" : "☾";
+      btn.setAttribute("aria-label", theme === "light" ? "Switch to dark colours" : "Switch to light colours");
 
       var banner = document.getElementById("hero-banner");
       if (banner) banner.src = theme === "light" ? "assets/banner-light.svg?v=3" : "assets/banner-dark.svg?v=3";
