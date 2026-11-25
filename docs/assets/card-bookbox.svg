@@ -81,7 +81,7 @@
   </g>
 
   <path d="M0 248h600" stroke="#6ea0ff" stroke-opacity="0.3" stroke-width="1"/>
-  <rect x="1" y="1" width="598" height="266" fill="none" stroke="#6ea0ff" stroke-opacity="0.28" stroke-width="1.5"/>
+  <!-- Frame removed: the card's CSS border is the frame. -->
   <g stroke="#6ea0ff" stroke-opacity="0.6" stroke-width="2" fill="none">
     <path d="M12 34 L12 12 L34 12"/>
     <path d="M588 34 L588 12 L566 12"/>
