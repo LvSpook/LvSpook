@@ -57,7 +57,9 @@
   --warn-line: rgba(240, 167, 92, 0.38);
   --focus: #ff6b81;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.9);
-  --radius: 4px;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --radius-pill: 999px;
 }
 
 :root[data-theme="light"] {
@@ -411,7 +413,7 @@ footer { padding: 34px 0 46px; color: var(--muted); font-size: 0.82rem; }
 .foot a { color: var(--muted); }
 .foot a:hover { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   .nav-links { display: none; }
   /* With the links gone, the toggle keeps the right edge. */
   .theme-toggle { margin-left: auto; }
@@ -419,4 +421,8 @@ footer { padding: 34px 0 46px; color: var(--muted); font-size: 0.82rem; }
   .cards .repo-center { width: 100%; }
   section { padding: 46px 0; }
   .hero h1 { max-width: none; }
+}
+
+@media (max-width: 560px) {
+  .wrap { padding: 0 20px; }
 }
