@@ -330,6 +330,17 @@ section:last-of-type { border-bottom: 0; }
   --card-sep: rgba(110, 160, 255, 0.34);
 }
 
+/* pipfade: the card is monochrome like the app, so the accent is the card's
+   own ink rather than a colour */
+.repo.mono {
+  --card-soft: #0c0c0d;
+  --card-border: rgba(240, 240, 242, 0.26);
+  --card-line: rgba(240, 240, 242, 0.45);
+  --card-muted: #9a9aa0;
+  --card-link: #dcdce0;
+  --card-sep: rgba(240, 240, 242, 0.26);
+}
+
 .repo.red {
   --card-soft: #0a0708;
   --card-border: rgba(255, 31, 61, 0.30);
@@ -351,6 +362,7 @@ section:last-of-type { border-bottom: 0; }
 .repo .dot { width: 7px; height: 7px; border-radius: 50%; flex: none; }
 .repo .dot.green { background: #00d250; }
 .repo .dot.blue { background: #6ea0ff; }
+.repo .dot.mono { background: #f0f0f2; }
 .repo .dot.red { background: var(--accent); }
 .repo .sep { color: var(--card-sep); }
 .repo .meta .link { margin-left: auto; color: var(--card-link); font-weight: 700; white-space: nowrap; }

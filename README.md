@@ -12,6 +12,7 @@
 [![PRIMARY](https://img.shields.io/badge/RUST-000000?style=for-the-badge&logo=rust&logoColor=ff1f3d)](https://www.rust-lang.org)
 [![STATUS](https://img.shields.io/badge/BUILDING-000000?style=for-the-badge&logo=statuspage&logoColor=ff1f3d)](https://github.com/LvSpook?tab=repositories)
 [![BOOKBOX](https://img.shields.io/badge/BOOKBOX-000000?style=for-the-badge&logo=googlechrome&logoColor=ff1f3d)](https://lvspook.github.io/BookBox/)
+[![PIPFADE](https://img.shields.io/badge/PIPFADE-000000?style=for-the-badge&logo=windows&logoColor=ff1f3d)](https://lvspook.github.io/pipfade/)
 [![SITE](https://img.shields.io/badge/lvspook.github.io-000000?style=for-the-badge&logo=githubpages&logoColor=ff1f3d)](https://lvspook.github.io/LvSpook/)
 
 </div>
@@ -34,6 +35,7 @@ doesn't quietly phone home. When something annoys me enough, it becomes a repo.
 </p>
 
 <p align="center">
+  <a href="https://lvspook.github.io/pipfade/"><img src="docs/assets/card-pipfade.svg" alt="pipfade — a see-through mini player for Brave, Chrome and Edge" width="45%"></a>
   <a href="https://github.com/LvSpook?tab=repositories"><img src="docs/assets/card-more.svg?v=3" alt="More coming — small Windows tools in the workshop" width="45%"></a>
 </p>
 

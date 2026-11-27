@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 268" width="600" height="268" role="img" aria-label="pipfade - a see-through mini player for Windows">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0f11"/>
+      <stop offset="55%" stop-color="#0c0c0d"/>
+      <stop offset="100%" stop-color="#09090a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.84" cy="0.12" r="0.62">
+      <stop offset="0%" stop-color="#f0f0f2" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#f0f0f2" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The mark, in the app's own blend: solid, then 80%, then 27% at the
+         right edge. The same three stops Mark.PaintFrame uses. -->
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="55%"  stop-color="#ffffff" stop-opacity="0.804"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.275"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c9c9cf"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#f0f0f2" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f0f0f2" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <clipPath id="clip"><rect x="0" y="248" width="600" height="20"/></clipPath>
+  </defs>
+
+  <rect width="600" height="268" fill="url(#bg)"/>
+  <rect width="600" height="268" fill="url(#glow)"/>
+
+  <g stroke="#f0f0f2" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 67h600M0 134h600M0 201h600"/>
+    <path d="M120 0v268M240 0v268M360 0v268M480 0v268"/>
+  </g>
+
+  <!-- the mark: a frame that fades out to the right, the whole product in one shape -->
+  <g transform="translate(506 60)">
+    <rect x="-40" y="-23.5" width="80" height="47" rx="15.6" ry="15.6"
+          fill="none" stroke="#f0f0f2" stroke-opacity="0.07" stroke-width="12"
+          filter="url(#soft)"/>
+    <rect x="-40" y="-23.5" width="80" height="47" rx="15.6" ry="15.6"
+          fill="none" stroke="url(#frame)" stroke-width="5.4"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- the slider under it, the one control everybody reaches for -->
+    <path d="M-40 34h80" stroke="#f0f0f2" stroke-opacity="0.10" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M-40 34h44" stroke="#f0f0f2" stroke-opacity="0.55" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="4" cy="34" r="5" fill="#0c0c0d" stroke="#f0f0f2" stroke-width="2.2"/>
+  </g>
+
+  <text x="34" y="52" font-family="Consolas, 'Cascadia Mono', ui-monospace, monospace"
+        font-size="9.5" fill="#f0f0f2" fill-opacity="0.45" letter-spacing="2.4">03 // MINI PLAYER</text>
+
+  <text x="34" y="112" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
+        font-size="41" font-weight="800" letter-spacing="-1" fill="url(#name)">pipfade</text>
+
+  <text x="34" y="142" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
+        font-size="14" fill="#93939a">A see-through mini player for Brave, Chrome and Edge.</text>
+  <text x="34" y="162" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif"
+        font-size="14" fill="#93939a">Fades the player, keeps it where you put it, and stays quiet.</text>
+
+  <g transform="translate(34 190)" font-family="Consolas, ui-monospace, monospace"
+     font-size="10" letter-spacing="1.4">
+    <circle cx="4" cy="-4" r="4" fill="#f0f0f2"/>
+    <text x="14" y="0" fill="#b9b9c0">PowerShell</text>
+    <text x="96" y="0" fill="#f0f0f2" fill-opacity="0.35">/</text>
+    <text x="110" y="0" fill="#b9b9c0">Windows only</text>
+    <text x="200" y="0" fill="#f0f0f2" fill-opacity="0.35">/</text>
+    <text x="214" y="0" fill="#b9b9c0">v1.1.0</text>
+    <rect x="272" y="-13" width="82" height="20" rx="2" fill="#f0f0f2" fill-opacity="0.07"
+          stroke="#f0f0f2" stroke-opacity="0.28"/>
+    <text x="313" y="1" text-anchor="middle" fill="#e6e6ea" fill-opacity="0.8" font-size="9">NO INSTALL</text>
+  </g>
+
+  <g clip-path="url(#clip)">
+    <!-- the same hatched band the other cards carry, in the app's ink rather
+         than a colour -->
+    <g fill="#f0f0f2" fill-opacity="0.13">
+      <path d="M-24 268 L22 248 H42 L-4 268 Z"/><path d="M46 268 L92 248 H112 L66 268 Z"/>
+      <path d="M116 268 L162 248 H182 L136 268 Z"/><path d="M186 268 L232 248 H252 L206 268 Z"/>
+      <path d="M256 268 L302 248 H322 L276 268 Z"/><path d="M326 268 L372 248 H392 L346 268 Z"/>
+      <path d="M396 268 L442 248 H462 L416 268 Z"/><path d="M466 268 L512 248 H532 L486 268 Z"/>
+      <path d="M536 268 L582 248 H602 L556 268 Z"/>
+    </g>
+  </g>
+
+  <path d="M0 248h600" stroke="#f0f0f2" stroke-opacity="0.25" stroke-width="1"/>
+  <g stroke="#f0f0f2" stroke-opacity="0.45" stroke-width="2" fill="none">
+    <path d="M12 34 L12 12 L34 12"/>
+    <path d="M588 34 L588 12 L566 12"/>
+  </g>
+</svg>
